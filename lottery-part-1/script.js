@@ -1,7 +1,7 @@
 // console.log(Math.random());
 const pickbutton=document.getElementById("picknumberbtn")
 const resultbtn=document.getElementById("result")
-const gifts=[" ₹ 100 cash","toy car","blueetooth speaker","perfume","board game","fitness","digital clock","lamp","wirless Mouse"];
+const gifts=[" ₹ 100 cash","toy car","blueetooth speaker","perfume","board game","fitness","digital clock","lamp","wirless Mouse","lorry"];
 // console.log(gifts)
 
 pickbutton.addEventListener("click",function(){

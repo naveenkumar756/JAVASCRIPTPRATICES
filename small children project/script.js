@@ -4,10 +4,6 @@ const incrementby5btn =document.getElementById("incrementby5btn");
 const decrementby5btn =document.getElementById("decrementby5btn");
 const incrementmultiplyby5btn =document.getElementById("incrementmultiplyby5btn");
 const resetbtn =document.getElementById("resetbtn");
-
-
-
-
 const resultelement=document.getElementById("result");
 console.log(incrementbtn)
 let counter=0;
