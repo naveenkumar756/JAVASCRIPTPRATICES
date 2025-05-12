@@ -2,7 +2,13 @@ const pickbutton=document.getElementById("picknumberbtn")
 const resultbtn=document.getElementById("result")
 const LotterySheetContainer=document.getElementById("LotterySheetContainer")
 const tick=new Audio('tab.wav');
-const completedsound=gamecompleted=new Audio("gamecompleted.wav");
+// const naveen=new Audio('game close.wav')
+
+
+
+
+
+
 
 const gifts=[" ₹ 100 cash","toy car","blueetooth speaker","perfume","board game","fitness","digital clock","lamp","wirless Mouse","Lorry"];
 
@@ -22,13 +28,14 @@ setTimeout(function(){
 // resultbtn.textContent=`you have got ${drawnnumber},and you won${gift}`;
 // document.getElementById(drawnnumber).classList.add('winningbox')
 },5000);
+
+
+
 let counterseconds=0;
 const intervalid=setInterval(function(){
    tick.pause();
    tick.currenttime=0;
    tick.play();
-   
-
    counterseconds=counterseconds+1;
 const randombox=Math.floor(Math.random()*10)+1
 console.log(randombox);
@@ -36,11 +43,20 @@ for(let i=1;i<=10;i++){
    if(i===randombox){
       document.getElementById(i).classList.add("highlightedbox")
    }else{
-      document.getElementById(randombox).classList.remove("highlightedbox");
+      document.getElementById(i).classList.remove("highlightedbox");
 
    }
-   document.getElementById(i).classList.add("highlightedbox")
+   // document.getElementById(i).classList.add("highlightedbox")
 }
+
+
+
+
+//  document.getElementById('randombox').classList.add("highlightedbox");
+
+
+
+
 
 
 if(counterseconds===5){
@@ -54,9 +70,11 @@ resultbtn.textContent=`you have got ${drawnnumber},and you won${gift}`;
 document.getElementById(randombox).classList.remove("highlightedbox");
 
 document.getElementById(drawnnumber).classList.add('winningbox')
-completedsound.pause();
-completedsound.play();
-completedsound.currentTime=0;
+// naveen.pause();
+// naveen.currentTime();
+// naveen.play();
+
+
 clearInterval(intervalid);
 }
 },1000)
