@@ -20,11 +20,11 @@
     .online-shopping-container{
         padding: 10px;
         max-width: 1000px;
-        background-color:gray;
+        background-color:white;
         margin: 10px auto;
         padding: 10px;
         border-radius: 5px;
-        box-shadow: 0 4px 8px 0 wheat;
+        box-shadow: 0 4px 8px 0 rgb(245, 179, 196);
     }
     .product-row{
         display: flex;
@@ -52,18 +52,23 @@
 </style>
 <body>
     <div  class="online-shopping-container">
+        <p id="feedback">feedback</p>
         <h1>ONLINE SHOPPING</h1>
         <h2>Available Products</h2>
-  
+<div id="productcontainer">
 
-<div id="productcontainer"
-    <div class="product-row">
-        <p>laptop-Rs.50000</p>
-        <button>Add to cart</button>
-    </div>
 </div>
-    <!-- </div>
-      
+</div>
+<!-- 
+ <div class="product-row"> 
+         <p>laptop-Rs.50000</p>
+        <button>Add to cart</button>
+    </div> -->
+   
+    
+
+
+<!--       
     <div class="product-row">
         <p>laptop-Rs.50000</p>
         <button>Add to cart</button>
@@ -87,6 +92,24 @@
         <button>Add to cart</button>
 
     </div>
-    -->
+     -->
+
+
+     <div>
+        <h2>My cart</h2>
+        <div id="cartcontainer">
+            <div class="product-row">
+            <p>laptop-Rs.50000</p>
+                <button>Remove</button>
+            </div>
+
+        </div>
+     </div>
+
+
+     <!-- <button id="testing" onclick="testingdetails(100)">testing</button> -->
+
+      <button>testing</button>
+     <script src="script.js"></script>
 </body>
 </html>
